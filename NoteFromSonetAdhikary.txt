@@ -1,0 +1,16 @@
+Hi,this is Sonet.I've fixed the firebase database connection issue for your app.Here is some important notes for you-
+
+1.When importing firebase tools(like firestore) make sure you replace the 'SERVICE to the service name.Here is an example-
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js';
+
+
+2.Make sure you've added the type="module" in your index.html file when inserting the <script></script> tag.
+
+3.Make sure export the db and import it in script.js file.
+
+4.I think you have used the old syntax of firebase.Like db.collection.But in firebase 9,eatch function like collection has exported individually.
+
+5.I've just configure the firestore database for you.If you need the Auth,you can use the same steps to add user authentication in your project.
+
+
+Thank you.If you need anymore help,please contact me on my Twitter.My Twitterr handle is-sonetthecoder.
